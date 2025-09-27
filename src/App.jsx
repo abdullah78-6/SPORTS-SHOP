@@ -9,6 +9,9 @@ import { useContext } from 'react'
 import Loginpop from './components/loginpopup'
 import Header from './components/header'
 import Exploreproduct from './components/exploreproduct'
+import Home from './components/home'
+import Mobileapp from './components/mobileapp'
+import Footer from './components/footer'
 function Inner(){
   const {login}=useContext(Helper);
   return <div>
@@ -16,6 +19,9 @@ function Inner(){
     {login?<Loginpop/>:<></>}
     <Header/>
     <Exploreproduct/>
+    <Home/>
+    <Mobileapp/>
+    <Footer/>
     </div>
     
 
