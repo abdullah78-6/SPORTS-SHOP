@@ -12,15 +12,18 @@ import Exploreproduct from './components/exploreproduct'
 import Home from './components/home'
 import Mobileapp from './components/mobileapp'
 import Footer from './components/footer'
+import { Outlet } from 'react-router-dom'
+
 function Inner(){
   const {login}=useContext(Helper);
+
   return <div>
+    
     <Navbar/>
+    
+    
     {login?<Loginpop/>:<></>}
-    <Header/>
-    <Exploreproduct/>
-    <Home/>
-    <Mobileapp/>
+    <Outlet/>
     <Footer/>
     </div>
     

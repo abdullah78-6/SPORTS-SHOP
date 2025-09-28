@@ -1,6 +1,6 @@
 function Header(){
     return <div className="flex justify-center items-center mt-40 flex-wrap  ">
-        <div className="">
+        <div id="h">
             <h1 className="text-6xl font-bold w-250 text-blue-600">ORDER OUR SPORTS PRODUCTS FROM TOP QUALITY BRANDS THAT MAKES YOU FIT AND HEALTHY  </h1>
             <p className="text-4xl w-250 font-semibold text-gray-600 uppercase">From basketballs to footballs and everything . find top-quality gear that keeps your game strong.</p>
             

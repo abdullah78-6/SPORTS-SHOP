@@ -1,7 +1,7 @@
 import { assest } from "../assets/assests";
 
 function Mobileapp(){
-    return <div className="mt-7">
+    return <div className="mt-7" id="app">
         <div>
             <h1 className="text-center text-4xl font-bold text-gray-600">GET OUR APP FROM PLAY-STORE AND A APP-STORE</h1>
             
