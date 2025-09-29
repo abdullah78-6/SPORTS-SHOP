@@ -23,10 +23,10 @@ function Navbar(){
             
 
             
-            
-            <span className="absolute top-0 -right-1 w-4 h-4 bg-red-600 rounded-full flex items-center justify-center text-white text-xs">
+            {carttotal()===0?"":<span className="absolute top-0 -right-1 w-4 h-4 bg-red-600 rounded-full flex items-center justify-center text-white text-xs">
 
-            </span>
+            </span>}
+            
             </Link>
             
             <button className="bg-blue-600 text-white p-[4px] rounded-2xl mt-3 hover:bg-white      hover:text-blue-600" onClick={()=>setlogin(true)}>SIGN-UP</button>

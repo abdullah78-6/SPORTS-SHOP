@@ -6,7 +6,7 @@ import { RxCross1 } from "react-icons/rx";
 
 function Cart() {
   const navgate = useNavigate();
-  const { cartitems, removefromcart } = useContext(Helper);
+  const { cartitems, removefromcart,carttotal } = useContext(Helper);
 
   return (
     <div className="min-h-[calc(100vh-6rem)] p-6 max-w-6xl mx-auto">
@@ -70,15 +70,15 @@ function Cart() {
           <h1 className="text-3xl font-bold text-gray-700 uppercase mb-4">Cart Totals</h1>
           <div className="flex justify-between text-lg">
             <span>Subtotals</span>
-            <span>₹36</span>
+            <span>₹{carttotal()}</span>
           </div>
           <div className="flex justify-between text-lg">
             <span>Delivery Fee</span>
-            <span>₹40</span>
+            <span>₹{carttotal()===0?0:40}</span>
           </div>
           <div className="flex justify-between text-lg font-bold mb-4">
             <span>Total</span>
-            <span>₹76</span>
+            <span>₹{carttotal()===0?0:carttotal()+40} </span>
           </div>
           <button
             className="bg-yellow-600 text-gray-600 p-4 rounded-2xl uppercase font-bold w-full hover:bg-yellow-500 transition-colors"
