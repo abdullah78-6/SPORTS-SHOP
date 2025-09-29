@@ -11,7 +11,7 @@ function Cart() {
   return (
     <div className="min-h-[calc(100vh-6rem)] p-6 max-w-6xl mx-auto">
 
-      <ul className="hidden md:flex justify-between items-center uppercase font-bold text-gray-600 text-lg border-b-2 pb-3 mb-6">
+      <ul className="hidden md:flex justify-between items-center uppercase font-bold text-gray-600 text-lg  pb-3 mb-6 lg:mr-5">
         <li className="w-24 text-center">Item</li>
         <li className="flex-1 text-left">Title</li>
         <li className="w-24 text-center">Price</li>
@@ -50,7 +50,7 @@ function Cart() {
                 </p>
                 <RxCross1
                   onClick={() => removefromcart(item.id)}
-                  className="text-red-600 text-xl cursor-pointer hover:text-red-800"
+                  className="text-red-600 text-4xl cursor-pointer hover:text-red-800"
                 />
               </div>
             
