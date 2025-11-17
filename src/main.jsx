@@ -9,7 +9,7 @@ import Header from './components/header.jsx';
 import Exploreproduct from './components/exploreproduct.jsx';
 import Home from './components/home.jsx';
 import Mobileapp from './components/mobileapp.jsx';
-import Help from '../../../DASHBOARD/DASHBOARD/src/components/help.jsx';
+// import Help from '../../../DASHBOARD/DASHBOARD/src/components/help.jsx';
 const router=createBrowserRouter([
   {
     path:"/",
